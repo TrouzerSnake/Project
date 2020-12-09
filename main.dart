@@ -12,10 +12,10 @@ class MyApp extends StatelessWidget {
       title: 'Encyclopedie',
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Encyclopedie'),
+          title: Text('Helianthus'),
         ),
         body: Center(
-          child: Text('Encyclopedie'),
+          child: Text('is a Genus(a rank of taxonomic classification of living fossils)'),
         ),
       ),
     );
@@ -24,8 +24,7 @@ class MyApp extends StatelessWidget {
 
 Column(
   children: <Widget>[
-    Text('Aloe Vera'),
-    Text('Aloe Vera'),
+    Text('Sun Flower'),
     Expanded(
       child: FittedBox(
         fit: BoxFit.contain, // otherwise the logo will be tiny
@@ -40,15 +39,15 @@ Row(
     Icon(
       Icons.favorite,
       color: Colors.pink,
-      size: 24.0,
+      size: 25.0,
       semanticLabel: '',
     )
 
    Expanded(
-      child: Text('', textAlign: TextAlign.center),
+      child: Text('Sun Flower Fun Fact:They are native to the Americas', textAlign: TextAlign.center),
     ),
     Expanded(
-      child: Text('', textAlign: TextAlign.center),
+      child: Text('Sun Flower Fun Fact: The sunflower is the state flower of Kansas and The national flower of Ukraine', textAlign: TextAlign.center),
     ),
     Expanded(
       child: FittedBox(
@@ -61,12 +60,12 @@ Row(
 
 Container(
   constraints: BoxConstraints.expand(
-    height: Theme.of(context).textTheme.headline4.fontSize * 12.1 + 200.0,
+    height: Theme.of(context).textTheme.headline4.fontSize * 12.1 + 150.0,
   ),
   padding: const EdgeInsets.all(8.0),
   color: Colors.blue[600],
   alignment: Alignment.center,
-  child: Text('This plant is nice',
+  child: Text('Sun Flower'),
     style: Theme.of(context)
         .textTheme
         .headline4
@@ -85,14 +84,16 @@ async Padding(
 )
 
 Text(
-  'Voici le texte qui explique les importances de cette plante',
+  'Helianthus (/ˌhiːliˈænθəs/)[3] is a genus comprising about 70 species of annual and perennial flowering plants in the daisy family Asteraceae.[4][5] Except for three South American species, the species of Helianthus are native to North America and Central America. The common names "sunflower" and "common sunflower" typically refer to the popular annual species Helianthus annuus, whose round flower heads in combination with the ligules look like the sun.[6] This and other species, notably Jerusalem artichoke (H. tuberosus), are cultivated in temperate regions and some tropical regions as food crops for humans, cattle, and poultry, and as ornamental plants.[7] The species H. annuus typically grows during the summer and into early fall, with the peak growth season being mid-summer',
   textAlign: TextAlign.center,
   overflow: TextOverflow.ellipsis,
   style: TextStyle(fontWeight: FontWeight.bold),
 )
 
 const Image(
-  image: NetworkImage('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.the-scientist.com%2Fcritic-at-large%2Fopinion-crafting-a-cure-for-plant-blindness-67177&psig=AOvVaw2TSTXfUWxT2MWUPoD2cxxc&ust=1607033686855000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCMDdp5KpsO0CFQAAAAAdAAAAABAF'),
+  image: NetworkImage('https://en.wikipedia.org/wiki/File:Sunflower_sky_backdrop.jpg'),
 )
+
+
 
 
